@@ -9,7 +9,7 @@ var part = {
 	anchor			:	"sorry.html",
 	background		:	"txtballoon-dorange.svg",
 	btnImage		:	"knop-bits-lnk.svg",
-	btnImageOver	:	"knop-bits-hvr.svg",
+	btnImageOver		:	"knop-bits-hvr.svg",
 	btnImageCur		:	"knop-bits-cur.svg",
 	image			:	"bits.svg"
 }
@@ -23,7 +23,7 @@ var part = {
 	anchor			:	"cpu.html",
 	background		:	"txtballoon-dorange.svg",
 	btnImage		:	"knop-cpu-lnk.svg",
-	btnImageOver	:	"knop-cpu-hvr.svg",
+	btnImageOver		:	"knop-cpu-hvr.svg",
 	btnImageCur		:	"knop-cpu-cur.svg",
 	image			:	"cpu.svg"
 }
@@ -37,7 +37,7 @@ var part = {
 	anchor			:	"sorry.html",
 	background		:	"txtballoon-dorange.svg",
 	btnImage		:	"knop-gpu-lnk.svg",
-	btnImageOver	:	"knop-gpu-hvr.svg",
+	btnImageOver		:	"knop-gpu-hvr.svg",
 	btnImageCur		:	"knop-gpu-cur.svg",
 	image			:	"gpu.svg"
 }
@@ -51,7 +51,7 @@ var part = {
 	anchor			:	"sorry.html",
 	background		:	"txtballoon-dorange.svg",
 	btnImage		:	"knop-hardeschijf-lnk.svg",
-	btnImageOver	:	"knop-hardeschijf-hvr.svg",
+	btnImageOver		:	"knop-hardeschijf-hvr.svg",
 	btnImageCur		:	"knop-hardeschijf-cur.svg",
 	image			:	"hardeschijf.svg"
 }
@@ -65,7 +65,7 @@ var part = {
 	anchor			:	"sorry.html",
 	background		:	"txtballoon-dorange.svg",
 	btnImage		:	"knop-poorten-lnk.svg",
-	btnImageOver	:	"knop-poorten-hvr.svg",
+	btnImageOver		:	"knop-poorten-hvr.svg",
 	btnImageCur		:	"knop-poorten-cur.svg",
 	image			:	"poorten.svg"
 }
@@ -79,7 +79,7 @@ var part = {
 	anchor			:	"sorry.html",
 	background		:	"txtballoon-dorange.svg",
 	btnImage		:	"knop-ram-lnk.svg",
-	btnImageOver	:	"knop-ram-hvr.svg",
+	btnImageOver		:	"knop-ram-hvr.svg",
 	btnImageCur		:	"knop-ram-cur.svg",
 	image			:	"ram.svg"
 }
@@ -93,7 +93,7 @@ var part = {
 	anchor			:	"sorry.html",
 	background		:	"txtballoon-dorange.svg",
 	btnImage		:	"knop-rom-lnk.svg",
-	btnImageOver	:	"knop-rom-hvr.svg",
+	btnImageOver		:	"knop-rom-hvr.svg",
 	btnImageCur		:	"knop-rom-cur.svg",
 	image			:	"rom.svg"
 }
