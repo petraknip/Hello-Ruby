@@ -1,0 +1,633 @@
+@charset "UTF-8";
+
+
+/* ------------------------------------
+	COLORS:
+
+	#312783 (donkerblauw)
+	#E84E0F (oranje)
+	#E6007E (rose)
+	#951B81	(purple)
+	#007BC4 (lichtblauw)
+	#008D33 (donkergroen)
+	#9ABD36 (lichtgroen)
+	#F39200 (lichtoranje)
+	#FFE400 (geel)
+
+
+
+/* ------------------------------------
+	ALGEMEEN
+--------------------------------------- */
+
+html {
+	font-size: 100%;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+body.lblue, .lblue header {
+	background-color: #007BC4;
+}
+
+body.dblue, .dblue header {
+	background-color: #312783;
+}
+
+body.lorange, .lorange header {
+	background-color: #F39200;
+}
+
+.container  {
+	min-width: 320px;
+	max-width: 1000px;
+	width: 80vw;
+	margin: 0 auto;
+}
+
+
+/* ------------------------------------
+	TEKST OPMAAK
+--------------------------------------- */
+
+h1 {
+	font-family: ff-providence-sans-web-pro, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 2rem;
+	color: #312783;
+	font-size: 3rem;
+	margin: 1rem auto 1.2rem auto;
+}
+
+h2 {
+	font-family: ff-providence-sans-web-pro, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color: #FFF;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 1rem auto 0 auto;
+}
+
+p {
+	font-family: ff-providence-sans-web-pro, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.3rem;
+	color: #FFF;
+}
+
+a:link,
+a:visited {
+	font-family: ff-providence-sans-web-pro, sans-serif;
+	font-weight: 700;
+	color: #312783;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+a:hover {
+	font-weight: 700;
+	transition: color 0.5s ease;
+}
+
+
+/* ------------------------------------
+	NAVIGATIE
+--------------------------------------- */
+
+/* ***** ingeklapt menu ***** */
+
+nav ul {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 50;
+	max-height: 0;
+	overflow: hidden;
+	transition: 1s;
+}
+
+/* ***** uitgeklapt menu ***** */
+
+.showing {
+	background-color: #E84E0F;		/* oranje */
+	max-height: 20rem;
+}
+
+.moreShow {
+	background-color: #E84E0F;		/* oranje */
+	max-height: auto;
+}
+
+/* lay-out uitgeklapt menu */
+
+nav ul li {
+	font-size: 1.2rem;
+	width: 100%;
+	padding: 1.5rem 0;
+	text-align: center;
+}
+
+nav ul li a:hover {
+	color: #FFF;
+}
+
+.menuBtn {
+	position: absolute;
+	z-index: 100;
+	top: 1rem;
+	right: 5%;
+	font-family: ff-providence-sans-web-pro, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	color: #FFF;
+	cursor: pointer;
+}
+
+.menuBtn:hover {
+	color: #F39200;
+}
+
+.menuBtn:active {
+	color: #F39200;	
+}
+
+
+/* ------------------------------------
+	NAME INPUT
+--------------------------------------- */
+
+h1 img {
+	width: 90%;
+	margin: 0 auto;
+}
+
+p.heading {
+	font-family: ff-providence-sans-web-pro, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 4.6rem;
+	text-align: center;
+	color: #312783;
+	margin: 2rem auto 0 auto;
+}
+
+div#askName {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 2rem auto 4rem auto;
+}
+
+div#askName p {
+	flex: 100%;
+	font-family: ff-providence-sans-web-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.2rem;
+	color: #FFF;
+	margin: 0 auto;
+}
+
+div#askName input {
+	flex: 40%;
+	height: 2rem;
+	padding: 0.5rem;
+}
+
+div#askName input:focus {
+	outline: solid 2px #312783;
+}
+
+div#askName a img {
+	height: 2rem;
+	width: auto;
+	padding: 0 0 0 1rem;
+}
+
+div#askName a img.hide {
+	display:none
+}
+
+#typedTxt p {
+	color: #312783;
+}	
+	
+/* ***** 'Ga verder' knop ***** */
+
+#btnSwap:hover img:first-child {
+	display:none;
+}
+
+#btnSwap:hover img:last-child {
+	display:inline-block;
+}
+
+
+/* ***** Name Input verbergen of tonen ***** */
+
+#nameDiv {
+	display: block;
+}
+
+
+/* ------------------------------------
+	LAPTOP
+--------------------------------------- */
+
+.txtContainer {
+	padding-top:3rem;
+	padding-bottom:3rem;
+}
+
+.typedTxtContainer {
+	position: relative;
+	height: auto;
+	padding-top: 1rem;
+	z-index: 10;
+}
+
+#typedTxt p{
+	font-family: ff-providence-sans-web-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 0.8rem;
+	color: #312783;		/* donkerblauw */
+	position: absolute;
+	z-index: 10;
+	margin: -130% 10% 0 10%;
+	width: 80%;
+}
+
+.txtContainer a:link {
+	color: #312783;		/* donkerblauw */
+}
+
+.txtContainer a:hover {
+	color: #F39200;		/* oranje */
+}
+
+/* ***** Enter knop ***** */
+
+@-webkit-keyframes enterPulse {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes enterPulse {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+#enterPulse {
+	position: absolute;
+	z-index: 10;
+	margin: -49% 5% 2% 81%;
+	width: 10%;
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+}
+
+#enterPulse:hover {
+	-webkit-animation-name: enterPulse;
+	animation-name: enterPulse;
+	-webkit-animation-duration: 0.3s;
+	animation-duration: 0.3s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate;
+}
+
+.txtContainer {
+	width: 70vw;
+	margin: 0 auto;
+}
+
+.txtContainer p + p {
+	margin: 1.5rem 0;
+}
+
+/* ***** Tekstlink naar moederbord.html ***** */
+
+section.txtContainer > a {
+	font-size: 1.2rem;
+	margin: 0 2rem 4rem 0;
+	padding-top: 2rem;
+}
+
+section.txtContainer > a::after {
+    content: url(../images/arrow-dblauw.svg);
+    padding: 0 0 0 0.2rem;
+    display: inline-block;
+    width: 1.2rem;
+}
+
+section.txtContainer > a:link, section.txtContainer > a:visited {
+	text-decoration: none;
+	color: #312783;
+	font-weight: 700;
+}
+
+section.txtContainer > a:hover {
+	color: #F39200;
+	font-weight: 700;
+}
+
+section.txtContainer > a:hover::after {	
+	content: url(../images/arrow-lorange.svg);
+	padding: 0 0 0 0.2rem;
+    display: inline-block;
+    width: 1.2rem;
+}
+
+/* ***** Laptop div verbergen of tonen ***** */
+
+#laptopOut {
+	margin-top: 4rem;
+	display: block;
+}
+
+#laptopIn {
+	margin-top: 4rem;
+	display: block;
+}
+
+
+/* ------------------------------------
+	ONDERDELEN
+--------------------------------------- */
+
+section.partsList {
+	width: 400px;
+	min-width: 200px;
+	margin: 7rem auto;
+}
+
+img.balloon {
+	margin: 0 auto;
+	max-width: 400px;
+	min-width: 200px;
+}
+
+div.dynamicDiv {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	max-width: 400px;
+	min-width: 200px;
+}
+
+div.dynamicDiv img + p {
+	font-size: 0.9rem;
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+}
+
+div.dynamicDiv p + a {
+	font-family: ff-providence-sans-web-pro, sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #FFF;
+	cursor: pointer;
+	font-size: 0.8rem;
+	position: absolute;
+	top: 45%;
+	left: 5%;
+}
+
+div.dynamicDiv p + a::after {
+    content: url(../images/arrow-white.svg);
+    padding: 0 0 0 0.2rem;
+    display: inline-block;
+    width: 1rem;
+}
+
+div.dynamicDiv p + a:link, div.dynamicDiv p + p a:visited {
+	text-decoration: none;
+	color: #FFF;
+	font-weight: 700;
+}
+
+div.dynamicDiv p + a:hover {
+	color: #312783;
+	font-weight: 700;
+}
+
+div.dynamicDiv p + a:hover::after {	
+	content: url(../images/arrow-dblauw.svg);
+	padding: 0 0 0 0.2rem;
+    display: inline-block;
+    width: 1rem;
+}
+
+.dynamicImg {
+	width: 60%;
+	display: block;
+	margin: 0.1rem auto 0 auto;
+}
+
+
+/* ------------------------------------
+	INFO PAGINA PER PC ONDERDEEL
+--------------------------------------- */
+
+.partInfoImg p {
+	font-family: ff-providence-sans-web-pro, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: 3rem;
+	text-align: center;
+	color: #9ABD36;
+	margin: 6rem auto 0 auto;
+}
+
+.partInfoImg p span {
+	display: block;
+	font-size: 3rem;
+}
+
+.partInfoImg img {
+	width: 60%;
+	display: block;
+	margin: 1rem auto 3rem auto;
+}
+
+.partInfoTxt img {
+	display: none;
+}
+
+.partInfoTxt h1 {
+	font-style: normal;
+	font-weight: 700;
+	color: #9ABD36;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 1rem auto 0.6rem auto;
+}
+
+.partInfoTxt p {
+	text-align: center;
+	font-size: 1.2rem;
+	padding-top: 1rem;
+}
+
+section.partProps {
+	background-color: #008D33;
+	width: 70vw;
+	height: auto;
+	padding: 1rem;
+	margin: 2rem auto 2rem auto;
+}
+
+section.partProps p {
+	font-size: 1.2rem;
+	padding-bottom: 1rem;
+	text-align: center;
+}
+
+.partProps h2 img {
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+
+
+/* ***** Tekstlink naar moederbord.html ***** */
+
+section.partProps+a {
+	font-size: 1rem;
+	display: block;
+	text-align: center;
+	margin: 0 auto 4rem auto;
+}
+
+section.partProps+a::after {
+    content: url(../images/arrow-white.svg);
+    padding: 0 0 0 0.2rem;
+    display: inline-block;
+    width: 1.2rem;
+}
+
+section.partProps+a:link, section.partProps + a:visited {
+	text-decoration: none;
+	color: #FFF;
+	font-weight: 700;
+}
+
+section.partProps+a:hover {
+	color: #F39200;
+	font-weight: 700;
+}
+
+section.partProps+a:hover::after {	
+	content: url(../images/arrow-lorange.svg);
+	padding: 0 0 0 0.2rem;
+    display: inline-block;
+    width: 1.2rem;
+}
+
+
+/* ------------------------------------
+	MOEDERBORD HTML5 CANVAS
+--------------------------------------- */
+
+.mbContainer {
+	width: 300px;
+	min-width: 200px;
+	margin: 0 auto;
+}
+
+.mbContainer h1 {
+	font-size: 1.3rem;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 6rem auto 1rem auto;
+	color: #9ABD36;
+}
+
+.mbContainer p {
+	font-size: 1rem;
+	text-align: center;
+}
+
+#canvas {
+	margin: 0 auto;
+	max-width: 1000px;
+	max-height: 675px;
+	position: relative;
+}
+		
+div#domOverlayContainer {
+	pointer-events: none;
+	overflow: hidden;
+	max-width: 1000px;
+	max-height: 675px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+div#preloadDiv {
+	position: absolute;
+	top: 15rem;
+	left: 1rem;
+	width: 90vw; 
+	vertical-align: middle;
+	text-align: center;
+}
+
+div#preloadDiv span {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+div#preloadDiv img {
+	vertical-align: middle;
+	max-height: 100%;
+}
+
+
+/* ------------------------------------
+	SORRY
+--------------------------------------- */
+
+.sorry {
+	width: 400px;
+	min-width: 200px;
+	margin: 7rem auto;
+}
+
+.sorry img {
+	margin-top: 4rem;
+}
+
+/* --------------------------------------------------------------------------- */
+

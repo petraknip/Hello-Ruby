@@ -1,0 +1,291 @@
+@charset "UTF-8";
+
+@media screen and (min-width:1024px){
+
+
+
+/* ------------------------------------
+	NAVIGATIE
+--------------------------------------- */
+
+header {
+	height: 3.5rem;
+	width: 100%;
+	padding: 1rem;
+	position: fixed;
+	top: 0;
+	z-index: 20;
+}
+
+nav {
+	width: 900px;
+	margin: 0 auto;
+}
+
+nav ul {
+	padding-top: 1rem;
+	height: auto;
+	overflow: initial;
+	display: inline-block;
+}
+
+nav ul li {
+	display: inline;
+	padding: 0 4.5rem;
+}
+
+nav ul li a:link, nav ul li a:visited {
+	font-family: ff-providence-sans-web-pro, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #FFF;
+}
+
+nav ul li a:hover, nav ul li a:active {
+	color: #F39200;
+}
+
+nav ul li a.current  {
+	color: #F39200;
+}
+
+.menuBtn {
+	display: none;
+}
+
+nav.dark ul {
+	background-color: #312783;
+}
+
+/* ------------------------------------
+	NAME INPUT & LAPTOP
+--------------------------------------- */
+
+/* ***** Img groep Ruby & laptops ***** */
+
+#nameDiv {
+	margin-top: 10rem;
+	max-width: 1000px;
+}
+
+h1 img,
+.typedTxtContainer {
+	float: left;
+	width: 50%;
+	margin-right: 2rem;
+}
+
+/* ***** tekstblok naast Ruby ***** */
+
+#nameInput section {
+	padding-top: 4rem;
+}
+
+/* ***** tekstblok naast laptop ***** */
+
+.txtContainer {
+	float: left;
+	width: 40%;
+	padding-top: 5rem;
+}
+
+div#myTypedText {
+	font-size: 1.2rem;
+}
+
+#laptopOut, #laptopIn {
+	clear: both;
+	padding-top: 5rem;
+	max-width: 1000px;
+}
+
+
+/* ------------------------------------
+	ONDERDELEN
+--------------------------------------- */
+
+section.partsList {
+	width: 900px;
+}
+
+div.btnDiv a img {
+	margin: initial;
+	width: 400px;
+}
+
+div.dynamicDiv {
+	width: 400px;
+	height: 100%;
+	position: absolute;
+	top: 9rem;
+	left: 50%;
+}
+
+div.dynamicDiv img + p {
+	font-size: 1.2rem;
+	position: absolute;
+	top: 2%;
+	left: 5%;
+	width: 90%;
+}
+
+div.dynamicDiv p + a {
+	font-size: 1rem;
+	position: absolute;
+	top: 21%;
+	left: 5%;
+}
+
+div.dynamicDiv p + a::after {
+    content: url(../images/arrow-white.svg);
+    padding: 0 0 0 0.2rem;
+    display: inline-block;
+    width: 1rem;
+}
+
+div.dynamicDiv p + a:link, div.dynamicDiv p + p a:visited {
+	text-decoration: none;
+	color: #FFF;
+	font-weight: 700;
+}
+
+div.dynamicDiv p + a:hover {
+	color: #312783;
+	font-weight: 700;
+}
+
+div.dynamicDiv p + a:hover::after {	
+	content: url(../images/arrow-dblauw.svg);
+	padding: 0 0 0 0.2rem;
+    display: inline-block;
+    width: 1rem;
+}
+
+.dynamicImg {
+	width: 70%;
+	display: block;
+	margin: 0.1rem auto 1rem auto;
+}
+
+
+/* ------------------------------------
+	INFO PAGINA PER PC ONDERDEEL
+--------------------------------------- */
+
+.partInfoImg {
+	float: left;
+	width: 35%;
+	padding: 2rem;
+	margin: 0 auto;
+}
+
+.partInfoImg p {
+	font-size: 2rem;
+	line-height: 3rem;
+	text-align: center;
+
+}
+
+.partInfoImg p span {
+	display: block;
+	font-size: 3rem;
+}
+
+.partInfoTxt {
+	float: left;
+	width: 65%;
+	padding: 1rem;
+	margin: 7rem auto 0 auto;
+}
+
+.partInfoTxt h1 {
+	text-align: initial;
+}
+
+.partInfoTxt p {
+	color: #FFF;
+	text-align: initial;
+}
+
+section.partProps {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+	clear: both;
+	overflow: hidden;
+}
+
+.partProps div {
+	width: 20vw;
+	max-width: 275px;
+}
+
+.partProps img {
+	width: 100%;
+}
+
+.partProps p {
+	font-size: 1.2rem;
+	padding-bottom: 1rem;
+}
+
+/* ***** Tekstlink naar moederbord.html ***** */
+
+section.partProps+a {
+	font-size: 1rem;
+	display: block;
+	text-align: center;
+	margin: 0 auto 4rem auto;
+}
+
+section.partProps+a::after {
+    content: url(../images/arrow-white.svg);
+    padding: 0 0 0 0.2rem;
+    display: inline-block;
+    width: 1.2rem;
+}
+
+section.partProps+a:link, section.partProps + a:visited {
+	text-decoration: none;
+	color: #FFF;
+	font-weight: 700;
+}
+
+section.partProps+a:hover {
+	color: #F39200;
+	font-weight: 700;
+}
+
+section.partProps+a:hover::after {	
+	content: url(../images/arrow-lorange.svg);
+	padding: 0 0 0 0.2rem;
+    display: inline-block;
+    width: 1.2rem;
+}
+
+
+/* ------------------------------------
+	MOEDERBORD HTML5 CANVAS
+--------------------------------------- */
+
+.mbContainer {
+	width: 400px;
+}
+
+.mbContainer h1 {
+	font-size: 2rem;
+	margin: 6rem auto 1rem auto;
+}
+
+.mbContainer p {
+	font-size: 1.4rem;
+}
+
+
+/* ------------------------------------
+--------------------------------------- */
+	
+} /* eind-accolade mediaquery */
+

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0, user-scalable=yes">
+	<meta name="description" content="Een avontuurlijk sprookje over programmeren voor kinderen tussen 5 en 8 jaar" />
+	<title>De laptop</title>
+	<link href="css/meyerreset.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.typekit.net/ztj3ofq.css">
+	<link href="css/ruby-default.css" rel="stylesheet" type="text/css">
+	<link href="css/ruby-large.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="lblue">
+
+
+<!--
+	==========================================================
+			NAVIGATIE
+	==========================================================
+-->
+
+<header>
+	<nav>
+
+		<div class="menuBtn">
+			Menu
+		</div>	
+	
+		<div class="menu">
+			<ul>
+				<li><a href="#" class = "current">De laptop</a></li>
+				<li><a href="moederbord.html">Het moederbord</a></li>
+				<li><a href="onderdelen.html">Onderdelen</a></li>
+			</ul>
+		</div>
+
+	</nav>
+</header>
+
+
+<!--
+	==========================================================
+			NAME INPUT
+	==========================================================
+-->
+
+<div class="container" id="nameDiv">
+
+	<h1><img src = "images/groupruby.jpg" alt = "Met Ruby op reis door de computer." /></h1>
+
+	<section>
+		<p class="heading">Hé hallo!</p>
+		<p>Ik ben Ruby en dit zijn mijn vrienden. Vul hieronder jouw naam in, dan neem ik je mee op reis door de computer!</p>
+	</section>
+
+	<div id="askName">
+		<p>Mijn naam is:</p>
+		<input type="text" id="nameInput" />
+
+		<!-- image swap on hover button -->
+		<a id="btnSwap" href="#laptopOut">
+        	<img src="images/knop-submit.svg" alt="Op reis met Ruby"  />
+       		<img src="images/knop-submit-hover.svg" alt="" class="hide" />
+		</a>
+		
+	</div>
+
+</div>
+
+    
+<!--
+	==========================================================
+			LAPTOP BUITENKANT
+	==========================================================
+-->
+
+<main class ="container">
+
+<div id="laptopOut">
+
+<div class="typedTxtContainer">
+
+	<img src = "images/laptop-out.svg" alt = "laptop buitenkant" />		
+	<div id="typedTxt">
+		<p>Welkom <span id="nameResult"></span>, wat leuk dat je langskomt! Ik ben een laptop, zo'n handige uitklapbare computer om overal mee naar toe te nemen, je speelt er misschien zelf ook wel eens op...</p>
+	</div>
+	<a href="#laptopIn"><img id = "enterPulse" src = "images/enterbtn.svg" alt = "enter" /></a>
+
+</div>
+
+<section class="txtContainer">
+	<h1>De laptop</h1>
+	<p>Maar hoe zie ik er van binnen uit? En hoe werkt de computer eigenlijk?</p>
+	<p>Zoek op de laptop de enter-toets, kun jij die vinden? Druk erop, en kijk wat daaronder verborgen zit. Je kunt ook rechtstreeks naar het moederbord via onderstaande link.</p>
+	<a href="moederbord.html">Ontdek het moederbord</a>
+</section>
+	
+</div>
+
+
+<!--
+	==========================================================
+			LAPTOP BINNENKANT
+	==========================================================
+-->
+
+
+<div id="laptopIn">
+
+	<div class="typedTxtContainer">
+		<img src = "images/laptop-in.svg" alt = "laptop binnenkant" />
+	</div>
+
+
+	<section class="txtContainer">
+		<h1>Het moederbord</h1>
+		<p>In de computer zit het moederbord.</p>
+		<p>Dat is een plaat in de computer waarin de <a href = "cpu.html" title = "Central Processor Unit">CPU</a>, het geheugen en de verbindingen met andere apparaten zijn ondergebracht.</p> 
+	
+		<a href="moederbord.html">Ontdek het moederbord</a>
+	</section>
+	
+</div>
+
+
+
+</main>
+
+<!-- scripts -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/ruby.js"></script>
+<script src="js/nav.js"></script>
+
+</body>
+</html>
